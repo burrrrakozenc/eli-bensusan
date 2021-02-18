@@ -6,10 +6,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../styles/index.css'
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   // const { allContentfulAsset: { nodes: home },
   // } = data
-  const IndexImages = data.indexImages.nodes
   return (
     <Layout>
       <SEO title="Home" />
