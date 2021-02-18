@@ -75,7 +75,7 @@
     width: 40rem;
     height: 30rem;
     display: inline-block;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .carousel .carousel {
@@ -128,8 +128,8 @@
     white-space: nowrap;
     overflow: hidden;
     border: 3px solid #fff;
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 4rem;
     
 }
 
@@ -145,8 +145,8 @@
 .carousel .thumb img {
     vertical-align: top;
     object-fit: cover;
-    width: 30rem;
-    height: 30rem;
+    width: 3rem;
+    height: 3rem;
 
 }
 
@@ -281,6 +281,18 @@
     padding: 0;
     text-align: center;
     width: 100%
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .carousel .carousel-image {
+        height: 10rem;
+        object-fit: cover;
+    }
+    .carousel .carousel-root {
+        width: 12rem;
+        height: 12rem;
+        object-fit: cover;
+    }
 }
 
 @media (min-width: 960px) {

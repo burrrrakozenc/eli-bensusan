@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import {  graphql } from "gatsby"
+import Gallery from '../components/gallery'
 import Layout from "../components/layout"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 import SEO from "../components/seo"
 import '../styles/index.css'
 
@@ -27,17 +27,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="gallery-wrapper">
-        {IndexImages.map((item) => {
-          return (
-            <div className="gallery" key={item.id}>
-              <Link to="/object1">
-                <Image fixed={item.localFile.childImageSharp.fixed} alt="aa" className="gallery-image"/>
-              </Link>
-              <div className="desc">aa asdhajks adjskdhasjk jksja</div>
-            </div>
-          )
-        }
-        )}
+        <Gallery/>
       </div>
     </Layout>
   )
@@ -45,22 +35,22 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const query = graphql`
-query HomepageQuery {
-  indexImages: allContentfulAsset(filter: {title: {eq:"designed object"}})  {
-    nodes {
-      localFile {
-        childImageSharp {
-          fixed {
-            src
-          }
-        }
-        id
-      }
-    }
-  }
-}
-`
+// export const query = graphql`
+// query HomepageQuery {
+//   indexImages: allContentfulAsset(filter: {title: {eq:"designed object"}})  {
+//     nodes {
+//       localFile {
+//         childImageSharp {
+//           fixed {
+//             src
+//           }
+//         }
+//         id
+//       }
+//     }
+//   }
+// }
+// `
 
 
 

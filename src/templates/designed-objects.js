@@ -27,7 +27,7 @@ class DesignedObject extends React.Component {
             <Layout>
                 <div>
                     <div>
-                        <Carousel showArrows={true} showThumbs={true} showIndicators={false} infiniteLoop={true} centerMode={true} thumbWidth={'80px'}>
+                        <Carousel showArrows={true} showStatus={false} showThumbs={true} showIndicators={false} infiniteLoop={true} centerMode={true} thumbWidth={'80px'}>
                             {carousel.map((image) => {
                                 return (
                                     <Img className="carousel-image" key={carousel.id} fluid={image.fluid} />

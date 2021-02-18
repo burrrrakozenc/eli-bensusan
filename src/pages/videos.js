@@ -14,6 +14,7 @@ const options = {
             if (node.data.uri.indexOf('youtube.com') !== -1)
                 return (
                     <iframe
+                        // key={node.id}
                         width="779"
                         height="457"
                         src={node.data.uri}

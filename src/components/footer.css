@@ -6,19 +6,20 @@ footer {
     margin-top: -200px;
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 3rem;
 }
 
 .icon-set {
     display: flex;
     right: 0;
-    margin-top: 5rem;
-    float: right;
+    /* margin-top: 5rem; */
+    margin: 5rem auto;
     width: 16%;
     bottom: 0;
 }
 
 .icons {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding-left: 10px;
     right: 0;
 }
