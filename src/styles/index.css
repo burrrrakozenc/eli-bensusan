@@ -1,6 +1,7 @@
 .upper-body {
     display: flex;
     width: 100%;
+    max-width: 1100px;
 }
 
 .upper-text {
@@ -16,7 +17,7 @@
 }
 
 .gallery-wrapper {
-    max-width: 960px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -24,22 +25,22 @@
     padding-left: 4.5%;
 }
 
-div.gallery {
+.gallery {
     padding-left: 5px;
     margin: 5px;
     float: left;
 }
 
-div.gallery:hover {
+.gallery:hover {
     opacity: 0.8;
 }
 
-div.gallery .gallery-image {
+.gallery .gallery-image {
     width: 11rem;
     height: 11rem;
 }
 
-div.desc {
+.desc {
     width: 80%;
     padding: 5px;
     text-align: center;
@@ -49,7 +50,7 @@ div.desc {
 /* MEDIA QUERY */
 
 @media (min-width: 200px) and (max-width: 480px) {
-    div.gallery .gallery-image {
+    .gallery .gallery-image {
         width: 17rem;
         height: 17rem;
     }
@@ -63,7 +64,7 @@ div.desc {
         padding-right: 8%;
         padding-left: 8%;
     }
-    div.desc {
+    .desc {
         padding: 0;
         margin: 0;
     }
@@ -74,7 +75,7 @@ div.desc {
         padding-right: 14%;
         padding-left: 14%;
     }
-    div.desc {
+    .desc {
         padding: 0;
         margin: 0;
     }

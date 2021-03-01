@@ -1,6 +1,7 @@
 .article-wrapper {
     width: 100%;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
+    /* max-width: ; */
 }
 
 .designed-object-title {
@@ -25,7 +26,7 @@
     padding-left: 45px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .designed-object-article {
         display: block;
     }

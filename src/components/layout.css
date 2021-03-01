@@ -622,9 +622,9 @@ p {
 }
 
 .line {
-  width: 72%;
+  width: 83%;
   margin: 0 auto;
-  max-width: 920px;
+  max-width: 960px;
 }
 
 a, a:visited { color: black; }
@@ -634,7 +634,7 @@ a:hover { color: black; }
 body{ height:100vh; margin:0; }
 
 /* header{ min-height:50px; background:lightcyan; } */
-footer{ min-height:50px }
+/* footer{ min-height:50px } */
 
 /* Trick */
 body{ 
@@ -642,7 +642,13 @@ body{
   flex-direction:column; 
 }
 
-footer{
+.layout-container {
+  margin: 0 auto;
+  display: block;
+  max-width: 960px;
+}
+
+/* footer{
   margin-top:auto; 
   bottom: 0;
-}
+} */

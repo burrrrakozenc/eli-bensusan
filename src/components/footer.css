@@ -1,12 +1,12 @@
 footer {
     clear: both;
-    position: relative;
-    height: 200px;
-    width: 95%;
-    margin-top: -200px;
-    max-width: 1170px;
+    display: block;
+    /* height: 200px; */
+    width: 100%;
+    /* margin-top: -200px; */
+    max-width: 960px;
     margin: 0 auto;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 }
 
 .icon-set {

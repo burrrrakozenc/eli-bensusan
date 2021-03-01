@@ -23,10 +23,11 @@ const IndexPage = () => {
             Besides my creations I try to read about philosophy, improve my cooking skills, and organize Istanbul Poetry Slam, an open mic event where people perform poetry. <p></p>
           </p>
         </div>
+        <Gallery />
       </div>
-      <div className="gallery-wrapper">
-        <Gallery/>
-      </div>
+      {/* <div className="gallery-wrapper"> */}
+
+      {/* </div> */}
     </Layout>
   )
 }

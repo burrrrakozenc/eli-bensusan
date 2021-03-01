@@ -31,7 +31,7 @@ export default function Gallery() {
     }
     `}
       render={data => (
-        <div className="gallery-wrapper" style={{ margin: '0' }}>
+        <div className="gallery-wrapper">
           {
             data.allContentfulDesignedObject.nodes.map((item) => {
               return (

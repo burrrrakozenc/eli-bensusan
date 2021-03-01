@@ -1,5 +1,5 @@
 import React from 'react'
-import  { graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { Carousel } from 'react-responsive-carousel';
 import * as PropTypes from 'prop-types'
@@ -52,9 +52,7 @@ class DesignedObject extends React.Component {
                             </div>
                         </article>
                     </div>
-                    <div className="gallery-wrapper">
-                        <Gallery/>
-                    </div>
+                    <Gallery />
                 </div>
             </Layout>
         )

@@ -17,12 +17,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout-container">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: '1170px',
+          // maxWidth: '1170px',
           padding: `0 0.35rem 0.45rem`
         }}
       >
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       {/* <div className="push" ></div> */}
       <hr className="line" />
       <Footer />
-    </>
+    </div>
   )
 }
 
