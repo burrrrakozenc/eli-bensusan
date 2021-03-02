@@ -52,7 +52,7 @@
 @media (min-width: 200px) and (max-width: 480px) {
     .gallery .gallery-image {
         width: 17rem;
-        height: 17rem;
+        height: 15rem;
     }
     .upper-text {
         width: 90%;
@@ -61,8 +61,8 @@
 
 @media (min-width: 321px) and (max-width: 400px) {
     .gallery {
-        padding-right: 8%;
-        padding-left: 8%;
+        padding-right: 6%;
+        padding-left: 6%;
     }
     .desc {
         padding: 0;
@@ -72,8 +72,8 @@
 
 @media (min-width: 401px) and (max-width: 480px) {
     .gallery {
-        padding-right: 14%;
-        padding-left: 14%;
+        /* padding-right: 16%; */
+        padding-left: 16%;
     }
     .desc {
         padding: 0;

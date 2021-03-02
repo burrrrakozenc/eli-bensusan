@@ -52,7 +52,7 @@
 }
 
 .carousel-root {
-    max-width: 80%;
+    max-width: 100%;
     outline: none;
     margin: 0 auto;
     justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .carousel {
-    position: fixed;
+    /* position: fixed; */
     padding-top: 1rem;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .carousel .carousel-image {
-    width: 40rem;
+    width: 41rem;
     height: 30rem;
     display: inline-block;
     pointer-events: none;
@@ -93,8 +93,8 @@
 .carousel .thumbs-wrapper {
     /* margin: 20px; */
     overflow: hidden;
-    height: 30rem;
-    width: 30rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .carousel .thumbs {
@@ -285,7 +285,8 @@
 
 @media (min-width: 200px) and (max-width: 600px) {
     .carousel .carousel-image {
-        height: 10rem;
+        height: 12rem;
+        width: 90%;
         object-fit: cover;
     }
     .carousel .carousel-root {

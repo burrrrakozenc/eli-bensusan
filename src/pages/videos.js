@@ -14,17 +14,17 @@ const options = {
             if (node.data.uri.indexOf('youtube.com') !== -1)
                 return (
                     <iframe
-                        // key={node.id}
+                        title={node.data.uri.id}
                         width="779"
                         height="457"
                         src={node.data.uri}
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
-                        // style={{
-                        //     marginTop:'5rem',
-                        //     marginBottom:'3rem'
-                        // }}
+                    // style={{
+                    //     marginTop:'5rem',
+                    //     marginBottom:'3rem'
+                    // }}
                     >
 
                     </iframe>
@@ -32,16 +32,17 @@ const options = {
             else if (node.data.uri.indexOf('player.vimeo.com') !== -1)
                 return (
                     <iframe
+                        title={node.data.uri.id}
                         width="779"
                         height="457"
                         src={node.data.uri}
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
-                        // style={{
-                        //     marginTop:'rem',
-                        //     marginBottom:'3rem'
-                        // }}
+                    // style={{
+                    //     marginTop:'rem',
+                    //     marginBottom:'3rem'
+                    // }}
                     >
 
                     </iframe>

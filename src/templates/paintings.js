@@ -7,7 +7,7 @@ import '../components/designed-objects.css'
 import Img from 'gatsby-image'
 import '../styles/carousel.css'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import Gallery from '../components/gallery'
+import PaintingsGallery from '../components/paintings-gallery'
 
 
 const propTypes = {
@@ -22,12 +22,12 @@ class DesignedObject extends React.Component {
             carousel,
             headerTextRight,
             headerTextLeft
-        } = this.props.data.contentfulDesignedObject
+        } = this.props.data.contentfulPaintings
         return (
             <Layout>
-                <div className="designed-objects-container">
+                <div>
                     <div>
-                        <Carousel showArrows={true} showStatus={false} showIndicators={false} showThumbs={true} infiniteLoop={true} centerMode={true}>
+                        <Carousel showArrows={true} showStatus={false} showThumbs={true} showIndicators={false} infiniteLoop={true} centerMode={true} thumbWidth={'80px'}>
                             {carousel.map((image) => {
                                 return (
                                     <Img className="carousel-image" key={carousel.id} fluid={image.fluid} />
@@ -52,7 +52,7 @@ class DesignedObject extends React.Component {
                             </div>
                         </article>
                     </div>
-                    <Gallery />
+                    <PaintingsGallery />
                 </div>
             </Layout>
         )
@@ -62,24 +62,29 @@ class DesignedObject extends React.Component {
 DesignedObject.propTypes = propTypes
 
 export const query = graphql`
-query DesignedObjectQuery($slug: String!) {
-    contentfulDesignedObject(slug: {eq: $slug}) {
+query PaintingsQuery($slug: String!) {
+    contentfulPaintings(slug: {eq: $slug}) {
+        title
+        slug
+        id
+        hero {
+          id
+          fluid {
+            src
+          }
+        }
+        headerTextRight {
+          raw
+        }
+        headerTextLeft {
+          raw
+        }
         carousel {
           fluid {
             src
           }
-          id
         }
-        headerTextRight {
-            raw
-        }
-        headerTextLeft {
-           raw
-        }
-        slug
-        title
-        id
-    }
+      }
 }
 `
 
