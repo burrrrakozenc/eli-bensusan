@@ -78,7 +78,7 @@ export default function Gallery({ siteTitle }) {
                       return (
 
                         <li>
-                          <Link className="header-link" to={`/${item.slug}`}>
+                          <Link className="header-link" activeStyle={{color:'black'}} to={`/${item.slug}`}>
                             {item.title}
                           </Link>
                         </li>
@@ -89,7 +89,7 @@ export default function Gallery({ siteTitle }) {
               </nav>
             </div>
           </header>
-          <hr style={{ width: '83%', margin: '0 auto', maxWidth: '920px' }} />
+          <hr style={{ width: '100%', margin: '0 auto', maxWidth: '920px' }} />
           <div style={{ paddingBottom: '2rem' }}></div>
         </div>
       )}
