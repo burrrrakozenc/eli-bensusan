@@ -11,9 +11,10 @@
 
 .header-link {
     color: inherit;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     color: darkgray;
+    padding-left: 1.2rem;
 }
 
 nav li:hover {
